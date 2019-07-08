@@ -1,32 +1,39 @@
 require_relative 'spec_helper'
 require_relative '../intro_to_ruby_hashes_lab.rb'
 
+monopoly =  {
+  :railroads=>
+  {
+    :pieces=>4,
+    :rent_in_dollars=>
+    {
+      :one_piece_owned=>25,
+      :two_pieces_owned=>50,
+      :three_pieces_owned=>100,
+      :four_pieces_owned=>200
+    },
+    :names=>
+    {
+      :reading_railroad=>
+      {
+        "mortgage_value"=>"$100"
+      },
+      :pennsylvania_railroad=>
+      {
+        "mortgage_value"=>"$200"
+      },
+      :b_and_o_railroad=>
+      {
+        "mortgage_value"=>"$400"
+      },
+      :shortline=>
+      {
+        "mortgage_value"=>"$800"
+      }
+    }
+  }
+}
 
-
-describe "Building a Nested Monopoly Hash" do
-  describe "Adding Key/Value Pairs in the Top Level" do
-    describe "monopoly" do
-      it "adds a key/value pair to the monopoly hash. The key should be :railroads and the value should be an empty hash" do
-        expect(monopoly[:railroads]).to eq({})
-        expect(monopoly.keys.count).to eq(1)
-        expect(monopoly.values).to match_array([{}])
-      end
-    end
-  end
-
-  describe "Adding Key/Value Pairs in the Second Level" do
-    describe "monopoly_with_second_tier" do
-      it "sets the first key of the :railroads hash to a symbol, :pieces, whose value is an integer, 4" do
-        # the goal of this part of the lab is to have you build the multidimentional monopoly hash in sequential order
-        # hence the solution to this (and the rest of the tests in this lab) builds on top of each other.
-
-        expect(monopoly_with_second_tier.values[0].values[0]).to eq(4)
-        expect(monopoly_with_second_tier.values[0].keys[0]).to eq(:pieces)
-      end
-
-      it "sets the second key of the :railroads hash to a symbol, :names, whose value is an empty hash" do
-
-        expect(monopoly_with_second_tier[:railroads][:names]).to eq({})
       end
 
       it "sets the third key of the :railroads hash to a symbol, :rent_in_dollars, whose value is an empty hash " do
