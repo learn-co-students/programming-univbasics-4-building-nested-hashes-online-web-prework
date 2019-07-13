@@ -17,8 +17,6 @@ a similar way to how we built our `epic_tragedy` hash in the previous lesson.
 Read the test output very carefully; it will guide you through building the
 necessary methods. At the end of the exercise, your multidimensional monopoly
 hash should look like this:
-
-```ruby
 monopoly =  {
   :railroads=>
   {
@@ -51,7 +49,8 @@ monopoly =  {
     }
   }
 }
-```
+
+
 
 ## Resources
 
