@@ -28,23 +28,23 @@ describe "We can create complex, nested Hashes by implementing four methods:" do
 
   describe "the monopoly_with_third_tier method builds on the Hash returned by monopoly_with_second_tier, but updates the Hash pointed at by :railroads such that the Hash" do
     it "has a key called :rent_in_dollars" do
-      expect(monopoly_with_third_tier[:railroads].has_key?(:rent_in_dollars)).to(be_truthy, ":railroads should point to a Hash with key rent_in_dollars")
+      expect(monopoly_with_third_tier[":railroads"].has_key?(":rent_in_dollars")).to(be_truthy, ":railroads should point to a Hash with key rent_in_dollars")
     end
 
     it ":rent_in_dollars points to a Hash with four keys" do
-      expect(monopoly_with_third_tier[:railroads][:rent_in_dollars].keys.count).to(eq(4), ":railroads :rent_in_dollars Hash should record 4 levels of ownership")
+      expect(monopoly_with_third_tier[":railroads][:rent_in_dollars].keys.count).to(eq(4), :railroads:rent_in_dollars Hash should record 4 levels of ownership")
     end
 
 
       describe "the Hash pointed to by :rent_in_dollars" do
         it "has a key :one_piece_owned that points to a fee of 25" do
-          expect(monopoly_with_third_tier[:railroads][:rent_in_dollars].has_key?(:one_piece_owned)).to(be_truthy, "key :one_piece_owned should be present in this Hash")
-          expect(monopoly_with_third_tier[:railroads][:rent_in_dollars][:one_piece_owned]).to(eq(25), ":one_piece_owned should point to the value 25")
+          expect(monopoly_with_third_tier[":railroads"][":rent_in_dollars"].has_key?(":one_piece_owned")).to(be_truthy, "key :one_piece_owned should be present in this Hash")
+          expect(monopoly_with_third_tier[":railroads"][":rent_in_dollars"][":one_piece_owned"]).to(eq('25'), ":one_piece_owned should point to the value 25")
         end
 
         it "has a key :two_pieces_owned that points to a fee of 50" do
-          expect(monopoly_with_third_tier[:railroads][:rent_in_dollars].has_key?(:two_pieces_owned)).to(be_truthy, "key :two_pieces_owned should be present in this Hash")
-          expect(monopoly_with_third_tier[:railroads][:rent_in_dollars][:two_pieces_owned]).to(eq(50), ":two_pieces_owned should point to the value 50")
+          expect(monopoly_with_third_tier[":railroads"][":rent_in_dollars].has_key?(:two_pieces_owned)).to(be_truthy, "key ":two_pieces_owned should be present in this Hash")
+          expect(monopoly_with_third_tier[":railroads][:rent_in_dollars][:two_pieces_owned]).to(eq(50), "":two_pieces_owned should point to the value 50")
         end
 
         it "has a key :three_pieces_owned that points to a fee of 100" do
