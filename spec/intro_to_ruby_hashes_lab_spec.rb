@@ -4,25 +4,25 @@ require_relative '../intro_to_ruby_hashes_lab.rb'
 describe "We can create complex, nested Hashes by implementing four methods:" do
   describe "the base_hash method returns a Hash that" do
     it "has one key" do
-      expect(base_hash.keys.count).to(eq(1), "Make sure you have at least one key defined in the monopoly hash")
+      expect(base_hash.keys.count).to(eq('1'), "Make sure you have at least one key defined in the monopoly hash")
     end
 
     it "the one key is called :railroads" do
-      expect(base_hash.has_key?(:railroads)).to(be_truthy, "Make sure you have a key called :railroads in the `monopoly` Hash and that :railroads points to a Hash")
+      expect(base_hash.has_key?(":railroads")).to(be_truthy, "Make sure you have a key called :railroads in the `monopoly` Hash and that :railroads points to a Hash")
     end
 
     it "the one key, :railroads, points to an empty Hash" do
-      expect(base_hash[:railroads]).to eq({})
+      expect(base_hash[":railroads"]).to eq({})
     end
   end
 
   describe "the monopoly_with_second_tier method builds on the Hash returned by base_hash, but updates the inner Hash pointed at by :railroads such that the Hash" do
     it "has a key called :pieces" do
-      expect(monopoly_with_second_tier[:railroads].has_key?(:pieces)).to(be_truthy, "Make sure the nested hash :railroads has a key called :pieces")
+      expect(monopoly_with_second_tier[":railroads"].has_key?(":pieces")).to(be_truthy, "Make sure the nested hash :railroads has a key called :pieces")
     end
 
     it "has a key, :pieces, points to the Integer value 4" do
-      expect(monopoly_with_second_tier[:railroads][:pieces]).to(eq(4), "Make sure the nested hash :railroads has a key called :pieces whose value is 4")
+      expect(monopoly_with_second_tier[":railroads"][":pieces"]).to(eq('4'), "Make sure the nested hash :railroads has a key called :pieces whose value is 4")
     end
   end
 
