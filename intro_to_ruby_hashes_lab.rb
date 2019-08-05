@@ -1,5 +1,6 @@
-def base_hash
-  # Remember implicit return! We're returning this new Hash _without_ the
+def #Greatly abbreviated!
+  [" countries_and_capitols_of_the_world ="]
+  [":north_america"]
   # keyword "return." Nice and neat.
 	{}
 end
