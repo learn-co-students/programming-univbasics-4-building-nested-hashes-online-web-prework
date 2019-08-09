@@ -3,6 +3,7 @@ def base_hash
   # Remember implicit return! We're returning this new Hash _without_ the
   # keyword "return." Nice and neat.
 	{}
+	return
 end
 
 def monopoly_with_second_tier
@@ -26,25 +27,4 @@ def monopoly_with_fourth_tier
   # complexity.
 end
  
- countries_and_capitals_of_the_world = {
-  :north_america => {
-    "Canada" => {
-      :capital => "Ottawa",
-      :capital_climate => "Kőppen Dfb"
-    },
-    "USA" => {
-      :capital => "Washington D.C.",
-      :capital_climate => "Kőppen Cfa"
-    }
-  },
-  :africa => {
-    "Ghana" => {
-      :capital => "Accra",
-      :capital_climate => "Kőppen Aw"
-    },
-    "Nigeria" => {
-      :capital => "Abuja",
-      :capital_climate => "Kőppen Aw"
-    }
-  }
-}
+ 
