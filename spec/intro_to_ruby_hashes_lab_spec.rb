@@ -10,6 +10,7 @@ describe "We can create complex, nested Hashes by implementing four methods:" do
     it "the one key is called :railroads" do
       expect(base_hash.has_key?(:railroads)).to(be_truthy, "Make sure you have a key called :railroads in the `monopoly` Hash and that :railroads points to a Hash")
     end
+    
 
     it "the one key, :railroads, points to an empty Hash" do
       expect(base_hash[:railroads]).to eq({})
