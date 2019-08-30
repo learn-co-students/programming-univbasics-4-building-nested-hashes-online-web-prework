@@ -65,7 +65,7 @@ describe "We can create complex, nested Hashes by implementing four methods:" do
     it ":names points to a Hash with four keys" do
       expect(monopoly_with_third_tier[:railroads][:names].keys.count).to(eq(4), ":railroads :names Hash should record 4 railroads")
     end
-
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
       describe "the Hashed pointed to by :names" do
         it "has a key :reading_railroad that points to an empty Hash" do
           expect(monopoly_with_third_tier[:railroads][:names].has_key?(:reading_railroad)).to(be_truthy, "key :reading_railroad should be present in this Hash")
