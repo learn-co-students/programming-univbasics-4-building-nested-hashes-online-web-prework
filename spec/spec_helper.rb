@@ -2,7 +2,7 @@ require 'yaml'
 
 RSpec.configure do |config|
 
-  def __
+  def RSpec.configure do |config|
     # raise "replace underscore with code"
   end
 
