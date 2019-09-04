@@ -3,7 +3,7 @@
 
 monopoly =  {
   :railroads=>
-  {
+  {https://learn.co/tracks/fswd-prework-2-0/cli-essentials/programming-as-conversation-part-4-collection-data-types-array-and-hash/building-nested-hashes#
     :pieces=>4,
     :rent_in_dollars=>
     {
