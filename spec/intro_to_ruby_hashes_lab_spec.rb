@@ -1,6 +1,6 @@
 require_relative 'spec_helper'
 require_relative '../intro_to_ruby_hashes_lab.rb'
-
+intro_to_ruby_hashes_lab
 describe "We can create complex, nested Hashes by implementing four methods:" do
   describe "the base_hash method returns a Hash that" do
     it "has one key" do
