@@ -1,4 +1,4 @@
- fi# Building Nested Hashes Lab
+i# Building Nested Hashes Lab
 
 ## Learning Goals
 
