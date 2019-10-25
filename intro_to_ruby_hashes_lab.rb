@@ -1,26 +1,60 @@
 def base_hash
-  # Remember implicit return! We're returning this new Hash _without_ the
-  # keyword "return." Nice and neat.
-	{}
+ galaxy_planets = {
+   :republic, :empire
+   }
 end
 
 def monopoly_with_second_tier
-  # When you start writing the implementation for this method, copy the Hash
-  # you built in the previous method. Run the tests. They will fail, but
-  # they'll guide you in how to modify what you just did to have more
-  # complexity.
-end
+  galaxy_planets = {
+   :republic => {
+     "Ord Mantell", "Tython"},
+  :empire => {
+    "Hutta", "Korriban"}
+  }
+   }
 
 def monopoly_with_third_tier
-  # When you start writing the implementation for this method, copy the Hash
-  # you built in the previous method. Run the tests. They will fail, but
-  # they'll guide you in how to modify what you just did to have more
-  # complexity.
+ galaxy_planets = {
+   :republic => {
+     "Ord Mantell" => {
+       :native_species => "Cathar"},
+      "Tython" => {
+        :native_species => "Flesh Raiders"
+      }
+   },
+  :empire => {
+    "Hutta" => {
+      :native_species => "Evocii"},
+    "Korriban" => {
+      :native_species => "Sith"
+      }
+    }
+  }
+  
 end
 
 def monopoly_with_fourth_tier
-  # When you start writing the implementation for this method, copy the Hash
-  # you built in the previous method. Run the tests. They will fail, but
-  # they'll guide you in how to modify what you just did to have more
-  # complexity.
+ galaxy_planets = {
+   :republic => {
+     "Ord Mantell" => {
+       :native_species => "Cathar",
+       :climate => "Tropical"
+     },
+      "Tython" => {
+        :native_species => "Flesh Raiders",
+        :climate => "Jungle"
+      }
+   },
+  :empire => {
+    "Hutta" => {
+      :native_species => "Evocii"
+      :climate => "Swamp"
+    },
+    "Korriban" => {
+      :native_species => "Sith"
+      :climate => "Desert"
+      }
+    }
+  }
+ 
 end
