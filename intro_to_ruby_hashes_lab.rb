@@ -1,3 +1,4 @@
+
 def base_hash
 	  monopoly = {
 	    railroads: {} 
@@ -5,8 +6,10 @@ def base_hash
 end
 
 def monopoly_with_second_tier
-	  monopoly = {
-	    railroads: {pieces: 4, rent_in_dollars: {} }
+	  monopent_in_dollaoly = {
+	    railroads: {
+	    pieces: 4
+	    }
 	  }
 end
 
@@ -53,7 +56,7 @@ def monopoly_with_fourth_tier
 	          "mortgage_value" => "$400"
 	        },
 	        shortline_railroad: {
-	          'mortgage_value' => "$800"
+	          "mortgage_value"=> "$800"
 	        }}
 	    }
 	  }
