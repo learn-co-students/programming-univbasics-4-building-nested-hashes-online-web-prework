@@ -24,3 +24,15 @@ def monopoly_with_fourth_tier
   # they'll guide you in how to modify what you just did to have more
   # complexity.
 end
+
+countries_and_capitols_of_the_world = {
+  :north_america => {
+    'United States' => {
+      :capital => "Washington DC",
+        :capital_climate
+        => "Koppen Cfa"
+    }
+      
+       }
+  }
+}
