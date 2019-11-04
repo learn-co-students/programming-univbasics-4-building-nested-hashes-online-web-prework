@@ -1,28 +1,51 @@
 def base_hash
-	{:north_america => {
-	 "Canada" => {
-		 :capital => "Ottawa",
-		 :capital_climate => "Kőppen Dfb"}
-
+	hash = {
+		base: {}
+	}
 end
 
 def monopoly_with_second_tier
-  # When you start writing the implementation for this method, copy the Hash
-  # you built in the previous method. Run the tests. They will fail, but
-  # they'll guide you in how to modify what you just did to have more
-  # complexity.
+	hash = {
+	   	base: {
+	       trains: 7,
+	      names: {},
+	      cars: {}
+	    }
+	  }
 end
 
 def monopoly_with_third_tier
-  # When you start writing the implementation for this method, copy the Hash
-  # you built in the previous method. Run the tests. They will fail, but
-  # they'll guide you in how to modify what you just did to have more
-  # complexity.
+	hash = {
+			base: {
+				 trains: 7,
+				names => {
+					:Ruth =>	{}
+					:Mat => {}
+					:Andrew => {}
+				},
+				cars: {
+					:Benz => {"price" => "$35000"}
+					:Rolls => {"price" => "$60000"}
+					:Toyota => {"price" => "15000"}
+				 }
+			}
+		}
 end
 
 def monopoly_with_fourth_tier
-  # When you start writing the implementation for this method, copy the Hash
-  # you built in the previous method. Run the tests. They will fail, but
-  # they'll guide you in how to modify what you just did to have more
-  # complexity.
+	hash = {
+			base: {
+				 trains: 7,
+				names: {
+					:Ruth =>	{ "age" => "30"}
+					:Mat =>	{"age" => "25"}
+					:Andrew => {"age" => "16"}
+				},
+				cars: {
+					:Benz => {"price" => "$35000"}
+					:Rolls => {"price" => "$60000"}
+					:Toyota => {"price" => "15000"}
+				 }
+			}
+		}
 end
