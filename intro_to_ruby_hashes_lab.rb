@@ -1,4 +1,20 @@
 def base_hash
+  video_game ={ 
+    :video_game1 => { 
+      "player1" =>{
+        :name => "akim"
+        :age => "21"
+        :strength =>"4"
+        :Int =>"21"
+        :dex =>"8"
+      }
+        
+      }
+      
+    }
+    
+  } 
+  
   # Remember implicit return! We're returning this new Hash _without_ the
   # keyword "return." Nice and neat.
 
