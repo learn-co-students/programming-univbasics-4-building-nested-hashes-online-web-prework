@@ -1,5 +1,25 @@
 def base_hash
-  # Remember implicit return! We're returning this new Hash _without_ the
+	monopoly = {
+		:railroads=>
+		{
+			:pieces
+			:rent_in_dollars=>
+			{
+				:one_piece_owned=>
+				:two_pieces_owned=>
+				:three_pieces_owned=> 
+				:four_pieces_owned=>
+			},
+			:names=>
+			{
+				:reading_railroad=>
+				:pennsylvania_railroad=>
+				:b_and_o_railroad
+				:shortline
+			}
+		}
+	}
+	# Remember implicit return! We're returning this new Hash _without_ the
   # keyword "return." Nice and neat.
 
 end
